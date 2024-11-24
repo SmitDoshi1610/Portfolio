@@ -35,12 +35,12 @@ section{
     padding: 0 80px;
     margin: auto;
 }
-.about, .services, .skills, .teams, .contact, footer{
+.about, .services, .skills, .projects, .teams, .contact, footer{
     font-family: 'Poppins', sans-serif;
 }
 .about .about-content,
 .services .serv-content,
-.skills .skills-content,
+.skills, .skills-content,
 .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
@@ -377,6 +377,73 @@ section .title::after{
 .skills-content .right .mysql::before{
     width: 70%;
 }
+
+/* projects section styling */
+.projects .title::after{
+    content: "what i have developed";
+}
+.projects a{
+    color: white;
+    text-decoration: none;
+}
+.projects .projects-carousel .card{
+    background: #ffffff;
+    border-radius: 6px;
+    padding: 25px 35px;
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.projects .projects-carousel .card:hover{
+    background: crimson;
+}
+.projects .projects-carousel .card:hover button {
+    background-color: white;
+}
+.projects .projects-carousel .card:hover button a{
+    color: crimson;
+}
+.projects .projects-carousel .card .box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+.projects .projects-carousel .card:hover .box{
+    transform: scale(1.05);
+}
+.projects .projects-carousel .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+.projects .projects-carousel .card img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+.projects .projects-carousel .card:hover img{
+    border-color: #fff;
+}
+
+.projects button{
+    color: #fff;
+    display: block;
+    width: 160px!important;
+    height: 45px;
+    outline: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    flex-wrap: nowrap;
+    background: crimson;
+    border: 2px solid crimson;
+    transition: all 0.3s ease;
+}
+
 
 /* teams section styling */
 .teams .title::after{

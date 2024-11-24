@@ -35,14 +35,14 @@ $(document).ready(function () {
 
     // typing text animation script
     var typed = new Typed(".typing", {
-        strings: ["React-Js Developer", "Web-Developer", "Designer", "Problem Solver"],
+        strings: ["Software Developer", "Full-Stack Developer", ".Net Developer", "Problem Solver"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
     });
 
     var typed = new Typed(".typing-2", {
-        strings: ["React-Js Developer", "Web-Developer", "Designer", "Problem Solver"],
+        strings: ["Software Developer", "Full-Stack Developer", ".Net Developer", "Problem Solver"],
         typeSpeed: 100,
         backSpeed: 60,
         loop: true
@@ -54,6 +54,29 @@ $(document).ready(function () {
         loop: true,
         autoplay: true,
         autoplayTimeOut: 2000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: false
+            },
+            600: {
+                items: 2,
+                nav: false
+            },
+            1000: {
+                items: 3,
+                nav: false
+            }
+        }
+    });
+
+    $('.projects-carousel').owlCarousel({
+        margin: 20,
+        loop: true,
+        autoplay: true,
+        dots: false,
+        autoplayTimeOut: 100,
         autoplayHoverPause: true,
         responsive: {
             0: {
